@@ -1,0 +1,5 @@
+http://localhost:80/index.html
+http://localhost:80/form.html
+http://localhost:80/cgi-bin/testdb.pl
+http://localhost:80/cgi-bin/hello_world.pl
+http://localhost:80/cgi-bin/testdb.pl
