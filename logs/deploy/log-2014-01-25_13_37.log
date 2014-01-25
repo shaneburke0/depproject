@@ -1,0 +1,339 @@
+[H[2JStarting deploy script
+...
+Stopping services...
+ * Stopping web server apache2
+ ... waiting    ...done.
+Stopped apache2
+mysql stop/waiting
+Stopped mysql
+...
+Updating apps...
+Hit http://extras.ubuntu.com precise Release.gpg
+Hit http://extras.ubuntu.com precise Release
+Hit http://extras.ubuntu.com precise/main Sources
+Hit http://extras.ubuntu.com precise/main amd64 Packages
+Hit http://extras.ubuntu.com precise/main i386 Packages
+Ign http://extras.ubuntu.com precise/main TranslationIndex
+Get:1 http://security.ubuntu.com precise-security Release.gpg [198 B]
+Hit http://ie.archive.ubuntu.com precise Release.gpg
+Get:2 http://ie.archive.ubuntu.com precise-updates Release.gpg [198 B]
+Get:3 http://security.ubuntu.com precise-security Release [49.6 kB]
+Hit http://ie.archive.ubuntu.com precise-backports Release.gpg
+Hit http://ie.archive.ubuntu.com precise Release
+Ign http://extras.ubuntu.com precise/main Translation-en_IE
+Get:4 http://security.ubuntu.com precise-security/main Sources [96.7 kB]
+Ign http://extras.ubuntu.com precise/main Translation-en
+Get:5 http://ie.archive.ubuntu.com precise-updates Release [49.6 kB]
+Get:6 http://security.ubuntu.com precise-security/restricted Sources [2,494 B]
+Hit http://ie.archive.ubuntu.com precise-backports Release
+Get:7 http://security.ubuntu.com precise-security/universe Sources [30.5 kB]
+Hit http://ie.archive.ubuntu.com precise/main Sources
+Get:8 http://security.ubuntu.com precise-security/multiverse Sources [1,797 B]
+Hit http://ie.archive.ubuntu.com precise/restricted Sources
+Get:9 http://security.ubuntu.com precise-security/main amd64 Packages [357 kB]
+Hit http://ie.archive.ubuntu.com precise/universe Sources
+Hit http://ie.archive.ubuntu.com precise/multiverse Sources
+Hit http://ie.archive.ubuntu.com precise/main amd64 Packages
+Hit http://ie.archive.ubuntu.com precise/restricted amd64 Packages
+Hit http://ie.archive.ubuntu.com precise/universe amd64 Packages
+Hit http://ie.archive.ubuntu.com precise/multiverse amd64 Packages
+Hit http://ie.archive.ubuntu.com precise/main i386 Packages
+Hit http://ie.archive.ubuntu.com precise/restricted i386 Packages
+Hit http://ie.archive.ubuntu.com precise/universe i386 Packages
+Get:10 http://security.ubuntu.com precise-security/restricted amd64 Packages [4,627 B]
+Hit http://ie.archive.ubuntu.com precise/multiverse i386 Packages
+Hit http://ie.archive.ubuntu.com precise/main TranslationIndex
+Get:11 http://security.ubuntu.com precise-security/universe amd64 Packages [90.1 kB]
+Hit http://ie.archive.ubuntu.com precise/multiverse TranslationIndex
+Hit http://ie.archive.ubuntu.com precise/restricted TranslationIndex
+Hit http://ie.archive.ubuntu.com precise/universe TranslationIndex
+Get:12 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2,454 B]
+Get:13 http://ie.archive.ubuntu.com precise-updates/main Sources [449 kB]
+Get:14 http://security.ubuntu.com precise-security/main i386 Packages [377 kB]
+Get:15 http://security.ubuntu.com precise-security/restricted i386 Packages [4,620 B]
+Get:16 http://security.ubuntu.com precise-security/universe i386 Packages [94.5 kB]
+Get:17 http://security.ubuntu.com precise-security/multiverse i386 Packages [2,650 B]
+Hit http://security.ubuntu.com precise-security/main TranslationIndex
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+Get:18 http://ie.archive.ubuntu.com precise-updates/restricted Sources [7,039 B]
+Hit http://security.ubuntu.com precise-security/main Translation-en
+Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+Hit http://security.ubuntu.com precise-security/restricted Translation-en
+Get:19 http://ie.archive.ubuntu.com precise-updates/universe Sources [102 kB]
+Hit http://security.ubuntu.com precise-security/universe Translation-en
+Get:20 http://ie.archive.ubuntu.com precise-updates/multiverse Sources [8,486 B]
+Get:21 http://ie.archive.ubuntu.com precise-updates/main amd64 Packages [745 kB]
+Get:22 http://ie.archive.ubuntu.com precise-updates/restricted amd64 Packages [11.4 kB]
+Get:23 http://ie.archive.ubuntu.com precise-updates/universe amd64 Packages [231 kB]
+Get:24 http://ie.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.2 kB]
+Get:25 http://ie.archive.ubuntu.com precise-updates/main i386 Packages [769 kB]
+Get:26 http://ie.archive.ubuntu.com precise-updates/restricted i386 Packages [11.5 kB]
+Get:27 http://ie.archive.ubuntu.com precise-updates/universe i386 Packages [236 kB]
+Get:28 http://ie.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.4 kB]
+Hit http://ie.archive.ubuntu.com precise-updates/main TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-updates/restricted TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-updates/universe TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-backports/main Sources
+Hit http://ie.archive.ubuntu.com precise-backports/restricted Sources
+Hit http://ie.archive.ubuntu.com precise-backports/universe Sources
+Hit http://ie.archive.ubuntu.com precise-backports/multiverse Sources
+Hit http://ie.archive.ubuntu.com precise-backports/main amd64 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/restricted amd64 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/universe amd64 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/main i386 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/restricted i386 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/universe i386 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/multiverse i386 Packages
+Hit http://ie.archive.ubuntu.com precise-backports/main TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-backports/restricted TranslationIndex
+Hit http://ie.archive.ubuntu.com precise-backports/universe TranslationIndex
+Hit http://ie.archive.ubuntu.com precise/main Translation-en
+Hit http://ie.archive.ubuntu.com precise/multiverse Translation-en
+Hit http://ie.archive.ubuntu.com precise/restricted Translation-en
+Hit http://ie.archive.ubuntu.com precise/universe Translation-en
+Hit http://ie.archive.ubuntu.com precise-updates/main Translation-en
+Hit http://ie.archive.ubuntu.com precise-updates/multiverse Translation-en
+Hit http://ie.archive.ubuntu.com precise-updates/restricted Translation-en
+Hit http://ie.archive.ubuntu.com precise-updates/universe Translation-en
+Hit http://ie.archive.ubuntu.com precise-backports/main Translation-en
+Hit http://ie.archive.ubuntu.com precise-backports/multiverse Translation-en
+Hit http://ie.archive.ubuntu.com precise-backports/restricted Translation-en
+Hit http://ie.archive.ubuntu.com precise-backports/universe Translation-en
+Fetched 3,762 kB in 5s (704 kB/s)
+Reading package lists...
+Finished updating
+...
+Uninstalling apps...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gir1.2-ubuntuoneui-3.0 libubuntuoneui-3.0-1 thunderbird-globalmenu
+Use 'apt-get autoremove' to remove them.
+The following packages will be REMOVED:
+  apache2
+0 upgraded, 0 newly installed, 1 to remove and 176 not upgraded.
+After this operation, 29.7 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 194788 files and directories currently installed.)
+Removing apache2 ...
+Uninstalled Apache..
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libnet-daemon-perl gir1.2-ubuntuoneui-3.0 libdbi-perl libterm-readkey-perl
+  libhtml-template-perl mysql-server-core-5.5 mysql-client-core-5.5
+  libdbd-mysql-perl libplrpc-perl libubuntuoneui-3.0-1 thunderbird-globalmenu
+  mysql-server-5.5 mysql-client-5.5
+Use 'apt-get autoremove' to remove them.
+The following packages will be REMOVED:
+  mysql-client mysql-server
+0 upgraded, 0 newly installed, 2 to remove and 176 not upgraded.
+After this operation, 231 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 194784 files and directories currently installed.)
+Removing mysql-client ...
+Removing mysql-server ...
+Uninstalled MySQL..
+...
+Clean install apps
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git-core is already the newest version.
+The following packages were automatically installed and are no longer required:
+  libnet-daemon-perl gir1.2-ubuntuoneui-3.0 libdbi-perl libterm-readkey-perl
+  libhtml-template-perl mysql-server-core-5.5 mysql-client-core-5.5
+  libdbd-mysql-perl libplrpc-perl libubuntuoneui-3.0-1 thunderbird-globalmenu
+  mysql-server-5.5 mysql-client-5.5
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 176 not upgraded.
+Installed Git
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libnet-daemon-perl gir1.2-ubuntuoneui-3.0 libdbi-perl libterm-readkey-perl
+  libhtml-template-perl mysql-server-core-5.5 mysql-client-core-5.5
+  libdbd-mysql-perl libplrpc-perl libubuntuoneui-3.0-1 thunderbird-globalmenu
+  mysql-server-5.5 mysql-client-5.5
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  apache2
+0 upgraded, 1 newly installed, 0 to remove and 176 not upgraded.
+Need to get 0 B/1,492 B of archives.
+After this operation, 29.7 kB of additional disk space will be used.
+Selecting previously unselected package apache2.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 194779 files and directories currently installed.)
+Unpacking apache2 (from .../apache2_2.2.22-1ubuntu1.4_amd64.deb) ...
+Setting up apache2 (2.2.22-1ubuntu1.4) ...
+Installed Apache
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gir1.2-ubuntuoneui-3.0 libubuntuoneui-3.0-1 thunderbird-globalmenu
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  mysql-client mysql-server
+0 upgraded, 2 newly installed, 0 to remove and 176 not upgraded.
+Need to get 0 B/22.2 kB of archives.
+After this operation, 231 kB of additional disk space will be used.
+Selecting previously unselected package mysql-client.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 194783 files and directories currently installed.)
+Unpacking mysql-client (from .../mysql-client_5.5.35-0ubuntu0.12.04.1_all.deb) ...
+Selecting previously unselected package mysql-server.
+Unpacking mysql-server (from .../mysql-server_5.5.35-0ubuntu0.12.04.1_all.deb) ...
+Setting up mysql-client (5.5.35-0ubuntu0.12.04.1) ...
+Setting up mysql-server (5.5.35-0ubuntu0.12.04.1) ...
+Installed MySQL Server & Client
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libwww-perl is already the newest version.
+The following packages were automatically installed and are no longer required:
+  gir1.2-ubuntuoneui-3.0 libubuntuoneui-3.0-1 thunderbird-globalmenu
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 176 not upgraded.
+Installed libwww-perl
+...
+Get & deploy source code
+www/
+www/form.html
+www/index.html
+cgi-bin/
+cgi-bin/hello_world.pl
+cgi-bin/testdb.pl
+cgi-bin/accept_form.pl
+Cloning into 'NCIRL'...
+Git source cloned to - pkg_v2
+Deployed www
+Deployed cgi
+...
+Starting services
+ * Starting web server apache2
+   ...done.
+Started Apache
+mysql start/running, process 4460
+Started MySQL
+...
+Creating DB tables
+name	address
+John Smith	Street Address
+Created Database: dbtest
+Created table: custdetails
+...
+Checking Apache
+6
+Apache process is Running
+Apache is Listening
+Remote Apache TCP port is up
+...
+Checking MySQL
+1
+MySQL process is Running
+MySQL is Listening
+...
+Monitoring website
+| http://localhost:80/index.html               ACCESSED   Response 0 seconds   |
+| http://localhost:80/form.html                ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/hello_world.pl   ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 0 seconds   |
+
+Site check completed.
+...
+Monitoring apps
+Service is running: apache2
+Service is running: mysql
+...
+Monitoring disk space
+Disk space ....65% capacity.
+...
+Monitoring memory
+Memory free: 3887 MB
+...
+Finished in 33.415224654 seconds
+...
+Starting active monitoring...
+...
+Monitoring website
+| http://localhost:80/index.html               ACCESSED   Response 0 seconds   |
+| http://localhost:80/form.html                ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/hello_world.pl   ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 0 seconds   |
+
+Site check completed.
+...
+Monitoring apps
+Service is running: apache2
+Service is running: mysql
+...
+Monitoring disk space
+Disk space ....65% capacity.
+...
+Monitoring memory
+Memory free: 3883 MB
+...
+Monitoring website
+| http://localhost:80/index.html               DOWN        N/A                 |
+| http://localhost:80/form.html                DOWN        N/A                 |
+| http://localhost:80/cgi-bin/testdb.pl        DOWN        N/A                 |
+| http://localhost:80/cgi-bin/hello_world.pl   DOWN        N/A                 |
+| http://localhost:80/cgi-bin/testdb.pl        DOWN        N/A                 |
+
+Site check completed.
+...
+Monitoring apps
+Service has stopped: apache2
+Service is running: mysql
+...
+Monitoring disk space
+Disk space ....65% capacity.
+...
+Monitoring memory
+Memory free: 3881 MB
+...
+Monitoring website
+| http://localhost:80/index.html               DOWN        N/A                 |
+| http://localhost:80/form.html                DOWN        N/A                 |
+| http://localhost:80/cgi-bin/testdb.pl        DOWN        N/A                 |
+| http://localhost:80/cgi-bin/hello_world.pl   DOWN        N/A                 |
+| http://localhost:80/cgi-bin/testdb.pl        DOWN        N/A                 |
+
+Site check completed.
+...
+Monitoring apps
+Service has stopped: apache2
+Service is running: mysql
+...
+Monitoring disk space
+Disk space ....65% capacity.
+...
+Monitoring memory
+Memory free: 3877 MB
+...
+Monitoring website
+| http://localhost:80/index.html               ACCESSED   Response 0 seconds   |
+| http://localhost:80/form.html                ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/hello_world.pl   ACCESSED   Response 0 seconds   |
+| http://localhost:80/cgi-bin/testdb.pl        ACCESSED   Response 1 seconds   |
+
+Site check completed.
+...
+Monitoring apps
+Service is running: apache2
+Service has stopped: mysql
+...
+Monitoring disk space
+Disk space ....65% capacity.
+...
+Monitoring memory
+Memory free: 3912 MB
+...
