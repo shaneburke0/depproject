@@ -7,7 +7,7 @@ tar xf backup-www.tar.gz
 echo "Unzipped WWW directory" /var
 
 
-# remove all files from gci
+# remove all files from cgi
 rm /usr/lib/cgi-bin/*
 
 # tar current cgi

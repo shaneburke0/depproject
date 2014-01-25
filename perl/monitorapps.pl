@@ -3,9 +3,9 @@
 use strict;
  
 my @services = ( 'apache2', 'mysql' );
-my $alert_email = 'shaneob121@hotmail.com';
 my $host = `/bin/hostname`;
-my $error_log  = 'logs/system/system_errors.txt';  # File to store
+# File to store
+my $error_log  = 'logs/system/system_errors.txt';
 my $localtime  = localtime;
 chomp $host;
  
