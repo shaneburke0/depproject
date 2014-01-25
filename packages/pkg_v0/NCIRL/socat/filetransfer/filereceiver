@@ -1,0 +1,5 @@
+#!/bin/bash
+PORT=8080
+HOST=localhost
+echo Receiving file from $HOST on TCP port $PORT. Use ctrl+c to escape
+socat - TCP4:$HOST:$PORT

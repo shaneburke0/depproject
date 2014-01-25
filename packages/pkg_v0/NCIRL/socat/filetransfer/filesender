@@ -1,0 +1,4 @@
+#!/bin/bash
+FILE=filetest
+echo Sending file $FILE. Waiting for receiver
+socat TCP-LISTEN:8080 $FILE

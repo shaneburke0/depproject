@@ -1,0 +1,4 @@
+#!/bin/bash
+PORT=5553
+echo Running. Use ctrl+c to escape
+socat -v PIPE udp-recvfrom:$PORT,fork

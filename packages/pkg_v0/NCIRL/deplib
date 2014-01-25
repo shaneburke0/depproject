@@ -1,0 +1,126 @@
+#!/bin/bash
+
+if [ isApacheRunning ] ; then
+        echo Apache process is Running
+else
+        echo Apache process is not Running
+fi
+
+if [ isMysqlRunning ] ; then
+        echo Mysql process is Running
+else
+        echo Mysql process is not Running
+fi
+
+if [ isLocalIPalive ] ; then
+        echo Local IP address is alive
+else
+        echo Local IP address is not alive
+fi
+
+if [ isApacheListening ] ; then
+        echo Apache is Listening
+else
+        echo Apache is not Listening
+fi
+
+if [ isMysqlListening ] ; then
+        echo Mysql TCP port is Listening
+else
+        echo Mysql TCP port is not Listening
+fi
+
+if [ isMysqlRemoteUp ] ; then
+        echo Remote Mysql TCP port is up
+else
+        echo Remote Mysql TCP port is down
+fi
+
+
+if [ isApacheRemoteUp ] ; then
+        echo Remote Apache TCP port is up
+else
+        echo Remote Apache TCP port is down
+fi
+
+function isApacheRunning {
+        return isRunning apache2
+}
+
+function isMysqlRunning {
+        return isRunning mysqld
+}
+
+function isLocalIPalive {
+        return isRunning localhost
+}
+
+function isApacheListening {
+        return isTCPlisten 80
+}
+
+function isMysqlListening {
+        return isTCPlisten 3306
+}
+
+function isMysqlRemoteUp {
+        return isTCPremoteOpen localhost 3306
+}
+
+function isApacheRemoteUp {
+        return isTCPremoteOpen localhost 80
+}
+
+function isRunning {
+PROCESS_NUM=$(ps -ef | grep "$1" | grep -v "grep" | wc -l)
+if [ $PROCESS_NUM -gt 0 ] ; then
+        return 1
+else
+        return 0
+fi
+}
+
+function isIPalive {
+PINGCOUNT=$(ping -c 1 "$1" | grep "1 received" | wc -l)
+if [ $PINGCOUNT -gt 0 ] ; then
+        return 1
+else
+        return 0
+fi
+}
+
+function isTCPlisten {
+TCPCOUNT=$(netstat -tupln | grep tcp | grep "$1" | wc -l)
+if [ $TCPCOUNT -gt 0 ] ; then
+        return 1
+else
+        return 0
+fi
+}
+
+function isUDPlisten {
+UDPCOUNT=$(netstat -tupln | grep udp | grep "$1" | wc -l)
+if [ $UDPCOUNT -gt 0 ] ; then
+        return 1
+else
+        return 0
+fi
+}
+
+function isTCPremoteOpen {
+timeout 1 bash -c "echo >/dev/tcp/$1/$2" && return 1 ||  return 0
+}
+
+function getCPU {
+app_name=$1
+cpu_limit="5000"
+app_pid=`ps aux | grep $app_name | grep -v grep | awk {'print $2'}`
+app_cpu=`ps aux | grep $app_name | grep -v grep | awk {'print $3*100'}`
+if [[ $app_cpu -gt $cpu_limit ]]; then
+     return 0
+else
+     return 1
+fi
+}
+
+

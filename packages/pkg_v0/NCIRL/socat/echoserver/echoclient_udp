@@ -1,0 +1,6 @@
+#!/bin/bash
+PORT=5553
+ADDRESS=localhost
+PROTOCOL=udp
+echo Running. Use Ctrl-c to escape
+socat - $PROTOCOL:$ADDRESS:$PORT

@@ -1,0 +1,5 @@
+#!/bin/bash
+APort=5552
+Host=localhost
+echo Connecting to UDP $APort on $Host. Use ctrl+c to escape
+socat - udp:$Host:$APort

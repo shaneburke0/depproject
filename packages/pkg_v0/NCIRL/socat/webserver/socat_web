@@ -1,0 +1,7 @@
+#!/bin/bash
+PORT=8010
+THISMACHINE=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
+FILE=index.html
+echo
+echo connect with browser to http://$THISMACHINE:$PORT
+socat TCP-LISTEN:$PORT,fork,reuseaddr,crlf SYSTEM:"echo HTTP/1.1 200; echo; cat $FILE"

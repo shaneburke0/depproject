@@ -1,0 +1,4 @@
+#!/bin/bash
+BPort=5553
+echo Setting up echo server on localhost udp port $BPort. Use ctrl+c to escape
+socat -v PIPE udp-recvfrom:$BPort,fork

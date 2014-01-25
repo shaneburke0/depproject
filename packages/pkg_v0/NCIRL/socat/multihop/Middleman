@@ -1,0 +1,5 @@
+#!/bin/bash
+APort=5552
+BPort=5533
+echo Connecting UDP $APort to UDP $BPort on the local box. Use ctrl-c to escape
+socat -v udp-recvfrom:$APort,fork udp:localhost:$BPort

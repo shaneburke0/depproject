@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# load script file with useful functions in it
+. deplib
+
+# examples of variable substitution and conditional execution
+PROCESS=qwerty123
+isRunning $PROCESS
+if [ $? -gt 0 ] ; then
+	echo $PROCESS is running
+else
+	echo $PROCESS is not running
+fi
+
+PROCESS=apache2
+isRunning $PROCESS
+if [ $? -gt 0 ] ; then
+        echo $PROCESS is running
+else
+	echo $PROCESS is not running
+fi
+
